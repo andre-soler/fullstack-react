@@ -13,7 +13,7 @@ resource "azurerm_container_group" "api" {
 
   container {
     name   = "api"
-    image  = "andre2510/api-projeto-teste:1.3"
+    image  = "andre2510/api-projeto-teste:${var.image_tag}"
     cpu    = 0.5
     memory = 1
 
